@@ -9,7 +9,7 @@ export class DirectivesComponent {
 
   size = 40;
   font = 'Arial';
-  color = 'yellow';
+  color = 'red';
 
   classes = ['green-title', 'small-title']
 

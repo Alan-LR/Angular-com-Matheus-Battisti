@@ -1,0 +1,13 @@
+<div>
+    <h3>Posso mostrar?</h3>
+    <button (click)="exibir()">mostrar</button>
+    <div *ngIf="possoMostrar">Estamos mostrando esse conteúdo que foi permitido</div>
+    <br>
+
+    <p>--------------------------------------</p>
+    <h2 *ngIf="nome === 'Alan'; else nomeNaoEncontrado">O nome é Alan</h2>
+    <!--O else carrega no elemento que chamamos de ng-template-->
+    <ng-template #nomeNaoEncontrado>
+        <h2>nome não encontrado!</h2>
+    </ng-template>
+</div>

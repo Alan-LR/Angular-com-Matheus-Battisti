@@ -3,13 +3,18 @@
 <router-outlet></router-outlet>
 <app-first-component></app-first-component>
 
-<div style="background-color: aquamarine;">
+<div class="aulas">
     <h2>Componente parent data:</h2>
     <app-parent-data [recebendoNome]="nomeComponentePai" [userData]="userData"></app-parent-data>
 
 </div>
 
-<div style="background-color: cornflowerblue">
+<div class="aulas">
     <h2>Componente diretivas:</h2>
     <app-directives></app-directives>
+</div>
+
+<div class="aulas">
+    <h2>Componente if-render:</h2>
+    <app-if-render></app-if-render>
 </div>
