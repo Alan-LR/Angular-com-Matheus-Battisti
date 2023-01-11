@@ -1,45 +1,7 @@
 <p>Testando projeto</p>
-<h2>H2 sem cor</h2>
+<nav>
+    <a routerLink="/">Home</a> <br>
+    <a routerLink="/list">Lista</a>
+</nav>
+
 <router-outlet></router-outlet>
-<app-first-component></app-first-component>
-
-<div class="aulas">
-    <h2>Componente parent data:</h2>
-    <app-parent-data [recebendoNome]="nomeComponentePai" [userData]="userData"></app-parent-data>
-
-</div>
-
-<div class="aulas">
-    <h2>Componente diretivas:</h2>
-    <app-directives></app-directives>
-</div>
-
-<div class="aulas">
-    <h2>Componente if-render:</h2>
-    <app-if-render></app-if-render>
-</div>
-
-<div class="aulas">
-    <h2>Componente de eventos:</h2>
-    <app-eventos></app-eventos>
-</div>
-
-<div class="aulas">
-    <h2>Emitindo eventos: (componente filho interagindo com component pai)</h2>
-    <app-emitter></app-emitter>
-</div>
-
-<div class="aulas">
-    <h2>Componente list-render:</h2>
-    <app-list-render></app-list-render>
-</div>
-
-<div class="aulas">
-    <h2>Componente de pipes:</h2>
-    <app-pipes></app-pipes>
-</div>
-
-<div class="aulas">
-    <h2>Two way data binding:</h2>
-    <app-two-way-binding></app-two-way-binding>
-</div>
