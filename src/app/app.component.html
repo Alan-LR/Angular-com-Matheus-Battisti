@@ -2,4 +2,14 @@
 <h2>H2 sem cor</h2>
 <router-outlet></router-outlet>
 <app-first-component></app-first-component>
-<app-parent-data [recebendoNome]="nomeComponentePai" [userData]="userData"></app-parent-data>
+
+<div style="background-color: aquamarine;">
+    <h2>Componente parent data:</h2>
+    <app-parent-data [recebendoNome]="nomeComponentePai" [userData]="userData"></app-parent-data>
+
+</div>
+
+<div style="background-color: cornflowerblue">
+    <h2>Componente diretivas:</h2>
+    <app-directives></app-directives>
+</div>
