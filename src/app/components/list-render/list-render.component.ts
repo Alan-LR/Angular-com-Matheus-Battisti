@@ -1,3 +1,4 @@
+import { ListService } from './../../services/list.service';
 import { Component } from '@angular/core';
 import { Animal } from '../interfaces/Animal';
 
@@ -8,16 +9,24 @@ import { Animal } from '../interfaces/Animal';
 })
 export class ListRenderComponent {
 
-  animals:  Animal[] = [
-    {name: 'bob', type: 'cachorro', age:4},
-    {name: 'belinha', type: 'gato', age:2},
-    {name: 'quindim', type: 'ratão', age:1}
-  ]
+  animals:  Animal[] = [];
 
   animalDetails: string = ''
 
+  constructor(private listService: ListService){
+    this.getAnimals();
+  }
+
   showAge(animal: Animal){
     this.animalDetails = 'O pet ' + animal.name + ' Tem ' + animal.age + ' anos';
+  }
+
+  getAnimals(){
+    this.listService.getAll().subscribe((infoAnimals) => (this.animals = infoAnimals));
+  }
+
+  ngOnInit(){
+
   }
 
 }
