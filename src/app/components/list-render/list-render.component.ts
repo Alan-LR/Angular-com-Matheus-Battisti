@@ -25,6 +25,11 @@ export class ListRenderComponent {
     this.listService.getAll().subscribe((infoAnimals) => (this.animals = infoAnimals));
   }
 
+  remover(animal: Animal){
+    this.animals = this.animals.filter((a) => animal.name !== a.name) // apagando visualmente no front, para exemplo
+    this.listService.remove(animal.id).subscribe()
+  }
+
   ngOnInit(){
 
   }
